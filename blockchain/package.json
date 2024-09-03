@@ -1,0 +1,25 @@
+{
+  "name": "condominium",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx hardhat node",
+    "test": "npx hardhat test && npx hardhat coverage",
+    "compile": "npx hardhat compile",
+    "deploy:dev": "npx hardhat ignition deploy ignition/modules/Condominium.ts --network local",
+    "deploy:prod": "npx hardhat ignition deploy ignition/modules/Condominium.ts --network sepolia",
+    "deploy": "npx hardhat run scripts/deploy.ts --network sepolia"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.8",
+    "solidity-coverage": "^0.8.12"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
